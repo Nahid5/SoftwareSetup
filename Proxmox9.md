@@ -76,4 +76,5 @@ After the configs are set on the PVE server, then add the hardware from:
 - https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 
 4. Prevent Crashing
-- VM -> Hardware -> Display, set to none. Do this after setting up the VM for remote connectivity some other way. 
+- VM -> Hardware -> Display, set to none. Do this after setting up the VM for remote connectivity some other way.
+- Might have to disable secure boot, and other features like that.
