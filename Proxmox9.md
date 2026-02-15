@@ -16,9 +16,11 @@ echo "options vfio_iommu_type1 allow_unsafe_interrupts=1" > /etc/modprobe.d/iomm
 blacklist nvidia
 blacklist nvidiafb
 blacklist nouveau
+blacklist nvidia_drm
 blacklist radeon
 blacklist amdgpu
 blacklist snd_hda_intel
+blacklist snd_hda_codec_hdmi
 blacklist i915
 blacklist xe
 ```
@@ -72,3 +74,6 @@ After the configs are set on the PVE server, then add the hardware from:
 
 3. Install PCI driver on VM:
 - https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
+
+4. Prevent Crashing
+- VM -> Hardware -> Display, set to none. Do this after setting up the VM for remote connectivity some other way. 
